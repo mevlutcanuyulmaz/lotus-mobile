@@ -1,0 +1,48 @@
+import { StyleSheet } from 'react-native';
+import { appTheme } from '../../theme/appTheme';
+
+export const styles = StyleSheet.create({
+  container: { flex: 1, backgroundColor: appTheme.colors.pageBg, paddingHorizontal: 16 },
+  topBar: { marginBottom: 6 },
+  subtitle: { fontSize: 14, color: appTheme.colors.textSecondary, marginBottom: 16, lineHeight: 20 },
+  card: {
+    backgroundColor: appTheme.colors.cardBg,
+    borderRadius: appTheme.radius.lg,
+    borderWidth: 1,
+    borderColor: appTheme.colors.cardBorder,
+    padding: 14,
+    marginBottom: 10,
+    shadowColor: '#6D5DFB',
+    shadowOpacity: 0.05,
+    shadowOffset: { width: 0, height: 6 },
+    shadowRadius: 12,
+    elevation: 2,
+  },
+  cardTitle: { fontSize: 16, fontWeight: '700', color: appTheme.colors.textPrimary, marginBottom: 6 },
+  cardMeta: { fontSize: 13, color: appTheme.colors.textSecondary, marginBottom: 3 },
+  row: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' },
+  pill: {
+    backgroundColor: '#ECE9FF',
+    borderRadius: 999,
+    paddingHorizontal: 10,
+    paddingVertical: 4,
+  },
+  pillText: { color: appTheme.colors.primaryDark, fontWeight: '700', fontSize: 12 },
+  openText: { color: appTheme.colors.primaryDark, fontWeight: '700', fontSize: 13 },
+  emptyCard: {
+    backgroundColor: appTheme.colors.cardBg,
+    borderRadius: appTheme.radius.lg,
+    borderWidth: 1,
+    borderColor: appTheme.colors.cardBorder,
+    padding: 16,
+    gap: 12,
+  },
+  emptyText: { color: appTheme.colors.textSecondary, fontSize: 14, lineHeight: 20 },
+  primaryButton: {
+    backgroundColor: appTheme.colors.primary,
+    borderRadius: 12,
+    paddingVertical: 12,
+    alignItems: 'center',
+  },
+  primaryButtonText: { color: '#FFFFFF', fontSize: 14, fontWeight: '700' },
+});

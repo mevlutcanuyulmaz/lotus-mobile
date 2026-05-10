@@ -1,0 +1,100 @@
+import { StyleSheet } from 'react-native';
+import { appTheme } from '../../theme/appTheme';
+
+export const styles = StyleSheet.create({
+  container: { flex: 1, backgroundColor: appTheme.colors.pageBg, paddingHorizontal: 16 },
+  topBar: { marginBottom: 6 },
+  subtitle: { fontSize: 14, color: appTheme.colors.textSecondary, marginBottom: 14, lineHeight: 20 },
+  listContent: { paddingBottom: 12 },
+  gridRow: {
+    justifyContent: 'space-between',
+    marginBottom: 10,
+  },
+  filterTitle: {
+    fontSize: 12,
+    color: appTheme.colors.textSecondary,
+    fontWeight: '700',
+    marginBottom: 6,
+  },
+  filterRow: {
+    paddingRight: 8,
+    marginBottom: 8,
+  },
+  filterRowBottom: {
+    marginBottom: 12,
+  },
+  filterChip: {
+    borderRadius: 999,
+    borderWidth: 1,
+    borderColor: appTheme.colors.cardBorder,
+    backgroundColor: appTheme.colors.cardBg,
+    paddingHorizontal: 12,
+    paddingVertical: 7,
+    marginRight: 8,
+  },
+  filterChipActive: {
+    backgroundColor: '#ECE9FF',
+    borderColor: '#D7D0FF',
+  },
+  filterChipText: {
+    fontSize: 12,
+    color: appTheme.colors.textSecondary,
+    fontWeight: '700',
+  },
+  filterChipTextActive: {
+    color: appTheme.colors.primaryDark,
+  },
+  input: {
+    backgroundColor: appTheme.colors.cardBg,
+    borderWidth: 1,
+    borderColor: appTheme.colors.cardBorder,
+    borderRadius: appTheme.radius.md,
+    paddingHorizontal: 12,
+    paddingVertical: 11,
+    color: appTheme.colors.textPrimary,
+    fontSize: 14,
+    marginBottom: 12,
+  },
+  card: {
+    width: '48.5%',
+    backgroundColor: appTheme.colors.cardBg,
+    borderRadius: appTheme.radius.lg,
+    borderWidth: 1,
+    borderColor: appTheme.colors.cardBorder,
+    padding: 14,
+    marginBottom: 0,
+    shadowColor: '#6D5DFB',
+    shadowOpacity: 0.05,
+    shadowOffset: { width: 0, height: 6 },
+    shadowRadius: 12,
+    elevation: 2,
+  },
+  previewWrap: {
+    width: '100%',
+    aspectRatio: 1,
+    borderRadius: 12,
+    overflow: 'hidden',
+    marginBottom: 10,
+    backgroundColor: '#1D1B49',
+  },
+  previewVideo: {
+    width: '100%',
+    height: '100%',
+    backgroundColor: '#000000',
+  },
+  previewFallback: {
+    width: '100%',
+    height: '100%',
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#1D1B49',
+  },
+  previewFallbackText: {
+    color: '#FFFFFF',
+    fontSize: 11,
+    fontWeight: '700',
+  },
+  name: { fontSize: 15, fontWeight: '700', color: appTheme.colors.textPrimary, marginBottom: 4 },
+  meta: { fontSize: 12, color: appTheme.colors.textSecondary, marginBottom: 1 },
+  emptyText: { fontSize: 14, color: appTheme.colors.textSecondary },
+});
